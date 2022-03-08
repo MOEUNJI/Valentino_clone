@@ -1,0 +1,605 @@
+header {
+    height: 120px;
+    /* display: flex; */
+    position: relative;
+    background: linear-gradient(180deg,rgba(0,0,0,0.9),rgba(0,0,0,0))
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+}
+
+.header-left {
+    width: 33.3333%;
+}
+
+.header-left ul {
+    display: flex;
+}
+
+.earth {
+    background: url(../image/earth-black.svg)no-repeat;
+    background-size: 20px 20px;
+    width: 20px;
+    height: 20px;
+    margin: 0 10px;
+    filter: brightness(0) invert(1);
+}
+
+.cellphone {
+    background: url(../image/phone-icon-black.svg)no-repeat;
+    background-size: 20px 20px;
+    width: 20px;
+    height: 20px;
+    margin: 0 10px;
+    filter: brightness(0) invert(1);
+}
+
+.location {
+    background: url(../image/storelocator-black.svg)no-repeat;
+    background-size: 20px 20px;
+    width: 20px;
+    height: 20px;
+    margin: 0 10px;
+    filter: brightness(0) invert(1);
+}
+
+.header-left ul li a {
+    display: flex;
+    margin-right: 10px
+}
+
+.header-left ul li a span {
+    color: #fff;
+} 
+
+.header-center {
+    width: 33.3333%;
+    display: flex;
+    justify-content: center;
+}
+
+.logo {
+    width: 88px;
+    height: 46px;
+}
+
+.logo svg {
+    width: 88px;
+    height: 46px;
+    filter: brightness(0) invert(1);
+}
+
+.hidden {
+    position: absolute;
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(0px 0px 99.9% 99.9%);
+    overflow: hidden;
+    height: 1px;
+    width: 1px;
+}
+
+.header-right {
+    width: 33.3333%;
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.header-right ul {
+    display: flex;
+}
+
+.search-icon {
+    background: url(../image/search-primary.svg) no-repeat;
+    background-size: 20px 20px;
+    width: 40px;
+    height: 20px;
+    filter: brightness(0) invert(1);
+}
+
+.myimg-icon {
+    background: url(../image/header-right-myimg.svg) no-repeat;
+    background-size: 20px 20px;
+    width: 40px;
+    height: 20px;
+    filter: brightness(0) invert(1);
+}
+
+.start-icon {
+    background: url(../image/star.svg) no-repeat;
+    background-size: 20px 20px;
+    width: 40px;
+    height: 20px;
+    filter: brightness(0) invert(1);
+}
+
+.my-bag-img {
+    background: url(../image/header-bag.svg) no-repeat;
+    background-size: 20px 20px;
+    width: 40px;
+    height: 20px;
+    filter: brightness(0) invert(1);
+}
+
+
+.down-header-nav {
+    display: flex;
+    justify-content: center;
+}
+
+.down-header-nav ul {
+    display: flex;
+    width: 502px;
+    justify-content: space-between;
+}
+
+.down-header-nav ul a {
+    color: #fff;
+    font-weight: 600;
+}
+
+.main-slider-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 540px;
+}
+
+.main-slider-img {
+    background: url(../image/main-slider.jpg)no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 540px;
+    z-index: -1;
+    position: relative;
+}
+
+.arr-prev-img-white,
+.arr-prev-img-black {
+    background: url(../image/arrow_right-thin-black.svg);
+    background-size: 14px 25px;
+    transform: rotate(180deg);
+    width: 14px;
+    height: 25px;
+    position: absolute;
+    top: 280px;
+    left: 30px;
+    z-index: 999;
+}
+
+.arr-prev-img-black {
+    left: 35px;
+}
+
+.arr-prev-img-white {
+    filter: brightness(0) invert(1);
+}
+
+.arr-next-img-black,
+.arr-next-img-white {
+    background: url(../image/arrow_right-thin-black.svg);
+    background-size: 14px 25px;
+    width: 14px;
+    height: 25px;
+    position: absolute;
+    top: 280px;
+    right: 30px;
+    z-index: 999;
+}
+
+.main-slider-content a figure {
+    cursor: pointer;
+}
+
+.arr-next-img-black {
+    right: 35px;
+}
+
+.arr-next-img-white{
+    filter: brightness(0) invert(1);
+}
+
+.main-slider {
+    height: 420px;
+   
+}
+
+.main-slider-text-box {
+    position: absolute;
+    bottom: 175px;
+    /* width: 350px;
+    height: 135px; */
+    padding: 60px;
+    line-height: 40px;
+}
+
+.main-slider-text-box h2 {
+    font-size: 29px;
+    font-weight: 900;
+    color: #fff;
+}
+
+.btn-box {
+    padding-top: 23px;
+}
+
+.main-slider-text-box button {
+    width: 134px;
+    height: 39px;
+    background: #Ffffff;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.highlight {
+    width: 1073px;
+    padding: 23px 97px 0 97px;
+    margin: 0 auto;
+}
+
+.highlight h2 {
+    font-size: 29px;
+    font-weight: 900;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.highlight ul {
+    display: flex;
+}
+
+.highlight ul li {
+    width: 268px;
+    height: 220px;
+    display: flex;
+    /* flex-direction: column; */
+}
+
+.highlight-purple-bag {
+    background: url(../image/highlights-bag-puple.jpg)no-repeat;
+    background-size: 268px;
+    width: 268px;
+    height: 150px;
+    
+}
+
+.highlight-shoes {
+    background: url(../image/highlights-shoes.jpg) no-repeat;
+    background-size: 268px;
+    width: 268px;
+    height: 150px;
+}
+
+.highlight-bag-black {
+    background: url(../image/highlights-shoes-man.jpg);
+    background-size: 268px;
+    width: 268px;
+    height: 150px;
+}
+
+.highlight-sneakers {
+    background: url(../image/highlights-bag-black.jpg);
+    background-size: 268px;
+    width: 268px;
+    height: 150px;
+}
+
+.highlight ul li p {
+    padding: 20px 25px;
+    text-align: center;
+    font-size: 14px;
+    text-decoration: underline;
+}
+
+.pink-pp-collection {
+    width: 1073px;
+    margin: 0 auto;
+}
+
+.pink-pp-collection-img {
+    background: url(../image/valentinopinkpp_show-pap-fw2022-23.jpg)no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 0 auto;
+    width: 91%;
+    height: 600px;
+}
+
+.pink-pp-collection p {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.bold {
+    font-weight: 600;
+}
+
+.one-stud-bag-main-btn-box,
+.pink-pp-collection-btn-box {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.one-stud-bag-main-btn-box > button,
+.pink-pp-collection-btn-box > button {
+    width: 250px;
+    height: 43px;
+    border: 1px solid black;
+    outline: none;
+    background: #fff;
+    cursor: pointer;
+}
+
+.text-area button:hover,
+.btn-box > button:hover,
+.one-stud-bag-main-btn-box > button:hover,
+.pink-pp-collection-btn-box > button:hover {
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.one-stud-bag-main {
+    width: 100%;
+    margin-top: 50px;
+}
+
+.woman {
+    background: url(../image/woman.jpg)no-repeat;
+    width: 100%;
+    height: 300px;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.one-stud-bag-main h2 {
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    line-height: 50px;
+    margin-top: 15px;
+}
+
+.one-stud-bag {
+    width: 1238px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.one-stud-bag ul {
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 40px;
+}
+
+.one-stud-bag ul li {
+    width: 282px;
+    height: 534px;
+    margin: 0 40px 0 0;
+    justify-content: center;
+}
+
+.one-stud-bag-brown {
+    background: url(../image/w344.jpg);
+    background-size: 282px 353px;
+    width: 282px;
+    height: 353px;
+}
+
+.one-stud-bag-purple {
+    background: url(../image/w344-1.jpg);
+    background-size: 282px 353px;
+    width: 282px;
+    height: 353px;
+}
+
+.one-stud-bag-blue {
+    background: url(../image/w344-2.jpg);
+    background-size: 282px 353px;
+    width: 282px;
+    height: 353px;
+}
+
+.one-stud-bag-yellow {
+    background: url(../image/w344-3.jpg);
+    background-size: 282px 353px;
+    width: 282px;
+    height: 353px;
+}
+
+.one-stud-bag-text-box {
+    text-align: center;
+}
+
+.small-title {
+    font-size: 11px;
+    margin: 10px 0;
+}
+
+.one-stud-name {
+    font-size: 12px;
+    word-spacing: 3px;
+    font-weight: 600;
+    margin-bottom: 25px;
+}   
+
+.price {
+    font-size: 12px;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+
+.runway {
+    font-size: 12px;
+    background: #ddd;
+    width: 50px;
+    margin: 10px auto 15px auto;
+    padding: 3px;
+}
+
+.one-stud-bag-text-box button {
+    width: 103px;
+    height: 43px;
+    border: none;
+    background: #333;
+    color: #fff;
+    font-size: 12px;
+}
+
+/* .arr-right-black {
+    background: url(../image/arrow_right-thin-black.svg)no-repeat;
+    width: 10px;
+    height: 15px;
+} */
+
+.sneakers {
+    width: 100%;
+    padding-top: 24px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sneakers-man-img {
+    background: url(../image/sneakers-boy.jpg);
+    width: 50%;
+    height: 654px;
+    background-size: cover;
+    background-position: center;
+}
+
+.right-sneakers {
+    width: 50%;
+    height: 654px;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+.sneakers-name {
+    font-size: 29px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 250px;
+    margin: 0 auto 29px auto;
+}
+
+.sneakers-img {
+    background: url(../image/sneakers-img.webp);
+    background-size: 325px 411px;
+    margin: 0 auto;
+    width: 325px;
+    height: 411px;
+    margin-bottom: 14px;
+}
+
+.arr-prev-img-white,
+.arr-prev-img-black {
+    background: url(../image/arrow_right-thin-black.svg);
+    background-size: 14px 25px;
+    transform: rotate(180deg);
+    width: 14px;
+    height: 25px;
+    position: absolute;
+    top: 39%;
+    left: 165px;
+    z-index: 999;
+}
+
+.arr-prev-img-black {
+    left: 168px;
+}
+
+.arr-prev-img-white {
+    filter: brightness(0) invert(1);
+}
+
+.arr-next-img-black,
+.arr-next-img-white {
+    background: url(../image/arrow_right-thin-black.svg);
+    background-size: 14px 25px;
+    width: 14px;
+    height: 25px;
+    position: absolute;
+    top: 39%;
+    right: 165px;
+    z-index: 999;
+}
+
+
+.arr-next-img-black {
+    right: 168px;
+}
+
+.arr-next-img-white{
+    filter: brightness(0) invert(1);
+}
+
+.text-area {
+    width: 324px;
+    height: 67px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.text-area p {
+    font-size: 11px;
+}
+
+.text-area h2 {
+    font-size: 12px;
+    margin-top: 20px;
+    font-weight: 600;
+    word-spacing: 5px;
+}
+
+.text-area h3 {
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 3px;
+     margin-top: 20px;
+}
+
+.text-area button {
+    width: 250px;
+    height: 43px;
+    margin: 25px auto 0 auto;
+    border: 1px solid black;
+    background: none;
+}
+
+.bottom-line {
+    width: 1073px;
+    height: 1px;
+    background: #eee;
+    margin-top: 50px;
+    margin: 50px auto 0 auto;
+}
+
+.new-product {
+    width: 1073px;
+    padding: 23px 97px 0 97px;
+}
+
+.new-product-container {
+    display: flex;
+    width: 100%;
+}
+
+.new-product-left-img {
+    background: url(../image/new-arrivals-red.jpg);
+    background-size: 523px 600px;
+    width: 523px;
+    height: 600px;
+}
+
+.new-product-right {
+    background: url(../image/green-man.jpg);
+    background-size: 523px 600px;
+    width: 523px;
+    height: 600px;
+}
