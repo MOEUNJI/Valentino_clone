@@ -155,7 +155,7 @@ header {
     background: url(../image/main-slider.jpg)no-repeat;
     background-position: center;
     background-size: cover;
-    height: 540px;
+    height: 700px;
     z-index: -1;
     position: relative;
 }
@@ -212,9 +212,7 @@ header {
 
 .main-slider-text-box {
     position: absolute;
-    bottom: 175px;
-    /* width: 350px;
-    height: 135px; */
+    top: 435px;
     padding: 60px;
     line-height: 40px;
 }
@@ -240,7 +238,7 @@ header {
 
 .highlight {
     width: 1073px;
-    padding: 23px 97px 0 97px;
+    padding: 200px 97px 0 97px;
     margin: 0 auto;
 }
 
@@ -337,6 +335,8 @@ header {
     cursor: pointer;
 }
 
+.new-product-left button:hover,
+.new-product-right button:hover,
 .text-area button:hover,
 .btn-box > button:hover,
 .one-stud-bag-main-btn-box > button:hover,
@@ -452,12 +452,6 @@ header {
     font-size: 12px;
 }
 
-/* .arr-right-black {
-    background: url(../image/arrow_right-thin-black.svg)no-repeat;
-    width: 10px;
-    height: 15px;
-} */
-
 .sneakers {
     width: 100%;
     padding-top: 24px;
@@ -497,47 +491,47 @@ header {
     margin-bottom: 14px;
 }
 
-.arr-prev-img-white,
-.arr-prev-img-black {
+/* .sneakers-arr-prev-img-white,
+.sneakers-arr-prev-img-black {
     background: url(../image/arrow_right-thin-black.svg);
     background-size: 14px 25px;
+    width: 14px;
+    height: 25px;
+    position: absolute;
+    top: 40%;
+    left: 212px;
+    z-index: 999;
     transform: rotate(180deg);
-    width: 14px;
-    height: 25px;
-    position: absolute;
-    top: 39%;
-    left: 165px;
-    z-index: 999;
 }
 
-.arr-prev-img-black {
-    left: 168px;
+.sneakers-arr-prev-img-black {
+    left: 215px;
 }
 
-.arr-prev-img-white {
+.sneakers-arr-prev-img-white {
     filter: brightness(0) invert(1);
 }
 
-.arr-next-img-black,
-.arr-next-img-white {
+.sneakers-arr-next-img-black,
+.sneakers-arr-next-img-white {
     background: url(../image/arrow_right-thin-black.svg);
     background-size: 14px 25px;
     width: 14px;
     height: 25px;
     position: absolute;
-    top: 39%;
-    right: 165px;
+    top: 40%;
+    right: 350px;
     z-index: 999;
 }
 
 
-.arr-next-img-black {
-    right: 168px;
+.sneakers-arr-next-img-black {
+    right: 215px;
 }
 
-.arr-next-img-white{
+.sneakers-arr-next-img-white{
     filter: brightness(0) invert(1);
-}
+} */
 
 .text-area {
     width: 324px;
@@ -570,6 +564,7 @@ header {
     margin: 25px auto 0 auto;
     border: 1px solid black;
     background: none;
+    cursor: pointer;
 }
 
 .bottom-line {
@@ -583,23 +578,213 @@ header {
 .new-product {
     width: 1073px;
     padding: 23px 97px 0 97px;
+    margin: 0 auto;
 }
 
 .new-product-container {
     display: flex;
     width: 100%;
+    justify-content: space-between;
+}
+
+.new-product-container figure{
+    background-size: 523px 600px;
+    width: 523px;
+    height: 600px;
 }
 
 .new-product-left-img {
     background: url(../image/new-arrivals-red.jpg);
-    background-size: 523px 600px;
-    width: 523px;
-    height: 600px;
 }
 
-.new-product-right {
+.new-product-right-img {
     background: url(../image/green-man.jpg);
-    background-size: 523px 600px;
-    width: 523px;
-    height: 600px;
+}
+
+.new-product h2 { 
+    width: 1073px;
+    height: 35px;
+    margin: 0 auto 17px auto;
+    text-align: center;
+    font-size: 29px;
+    font-weight: 900;
+    letter-spacing: 5px;
+}
+
+.new-product-left,
+.new-product-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.new-product-left button,
+.new-product-right button {
+    width: 250px;
+    height: 43px;
+    margin-top: 20px;
+    border: 1px solid #000;
+    background: none;
+}
+
+.archive-collection {
+    width: 100%;
+    height: 527px;
+    display: flex;
+    padding-top: 50px;
+}
+
+.archive-collection-left {
+    width: 50%;
+    height: 527px;
+    background: #efeeeb;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.archive-collection-left h2 {
+    font-size: 16px;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+    font-weight: 600;
+} 
+
+.archive-collection-left p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-bottom: 20px;
+}
+
+.archive-collection-left button {
+    width: 250px;
+    height: 43px;
+    border: 1px solid #000;
+    background: #fff;
+}
+
+.archive-collection-right {
+    width: 50%;
+    height: 572px;
+}
+
+.archive-collection-right-img {
+    background: url(../image/two-model.jpg);
+    width: 100%;
+    height: 527px;
+    background-size: 100% 527px;
+}
+
+.valentino-app {
+    width: 1021px;
+    height: 246px;
+    margin: 30px auto 0 auto;
+    display: flex;
+    padding: 14px 25px 28px 25px;
+    border: 1px solid #ddd;
+    align-items: center;
+}
+
+.valentino-app-text {
+    width: 50%;
+}
+
+.valentino-app-text h2 {
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.valentino-app-text p {
+    margin: 15px 0;
+    font-size: 15px;
+}
+
+.valentino-app-text a {
+    text-decoration: underline;
+}
+
+.gif {
+    background: url(../image/gif.gif);
+    background-size: 490px 208px;
+    width: 490px;
+    height: 208px;
+}
+
+.delivery-boutique-container {
+    display: flex;
+    justify-content: center;
+    width: 1073px;
+    height: 257px;
+    margin: 0 auto;
+    margin-top: 50px;
+    align-items: center;
+}
+
+.delivery-content > a figure,
+.boutique-content > a figure {
+    background-size: 40px 40px;
+    width: 40px;
+    height: 40px;
+    margin: 0 auto;
+}
+
+.delivery {
+    background: url(../image/delivery.svg)no-repeat;
+}
+
+.boutique {
+    background: url(../image/boutique.svg)no-repeat;
+}
+
+.boutique-content a h2,
+.delivery-content a h2 {
+    font-weight: 600;
+    margin: 20px 0;
+}
+
+.boutique-content p,
+.delivery-content p {
+    margin: 10px 0 ;
+}
+
+.boutique-content a,
+.delivery-content a {
+    text-align: center;
+    font-size: 14px;
+}
+
+.boutique-content,
+.delivery-content {
+    width: 338px;
+    height: 244px;
+    border: 1px solid #ddd;
+    border-bottom: 10px solid #ddd;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.boutique-content:hover,
+.delivery-content:hover {
+    border-color: #000;
+}
+
+.boutique-content {
+    margin-left: 20px;
+}
+
+.delivery-content  {
+    margin-right: 20px;
+}
+
+.newsletter-container {
+    /* width: 100%; */
+    display: flex;
+}
+
+.newsletter-content {
+    width: 1903px;
+    height: 207px;
 }
