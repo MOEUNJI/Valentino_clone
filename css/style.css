@@ -10,6 +10,7 @@ header {
     justify-content: space-between;
     align-items: center;
     height: 60px;
+    padding: 5px;
 }
 
 .header-left {
@@ -18,6 +19,11 @@ header {
 
 .header-left ul {
     display: flex;
+}
+
+.header-right ul li:hover,
+.header-left ul li:hover {
+    border-bottom: 2px solid #fff;
 }
 
 .earth {
@@ -49,7 +55,9 @@ header {
 
 .header-left ul li a {
     display: flex;
-    margin-right: 10px
+    margin-right: 10px;
+    padding:10px;
+
 }
 
 .header-left ul li a span {
@@ -96,33 +104,41 @@ header {
 .search-icon {
     background: url(../image/search-primary.svg) no-repeat;
     background-size: 20px 20px;
-    width: 40px;
+    width: 20px;
     height: 20px;
     filter: brightness(0) invert(1);
+    padding: 10px;
+    background-position: center;
 }
 
 .myimg-icon {
     background: url(../image/header-right-myimg.svg) no-repeat;
     background-size: 20px 20px;
-    width: 40px;
+    width: 20px;
     height: 20px;
     filter: brightness(0) invert(1);
+    padding: 10px;
+    background-position: center;
 }
 
 .start-icon {
     background: url(../image/star.svg) no-repeat;
     background-size: 20px 20px;
-    width: 40px;
+    width: 20px;
     height: 20px;
     filter: brightness(0) invert(1);
+    padding: 10px;
+    background-position: center;
 }
 
 .my-bag-img {
     background: url(../image/header-bag.svg) no-repeat;
     background-size: 20px 20px;
-    width: 40px;
+    width: 20px;
     height: 20px;
     filter: brightness(0) invert(1);
+    padding: 10px ;
+    background-position: center;
 }
 
 
@@ -137,9 +153,18 @@ header {
     justify-content: space-between;
 }
 
+.down-header-nav ul li {
+    height: 30px;
+}
+
+.down-header-nav ul li:hover {
+    border-bottom: 3px solid #fff;
+}
+
 .down-header-nav ul a {
     color: #fff;
     font-weight: 600;
+    margin-bottom: 5px;
 }
 
 .main-slider-content {
@@ -193,7 +218,7 @@ header {
     z-index: 999;
 }
 
-.main-slider-content a figure {
+.main-slider-content figure {
     cursor: pointer;
 }
 
@@ -203,6 +228,10 @@ header {
 
 .arr-next-img-white{
     filter: brightness(0) invert(1);
+}
+
+.main-slider-conten figure:hover {
+    cursor: pointer;
 }
 
 .main-slider {
@@ -296,6 +325,10 @@ header {
     text-decoration: underline;
 }
 
+.highlight ul li p:hover {
+    text-decoration: none;
+}
+
 .pink-pp-collection {
     width: 1073px;
     margin: 0 auto;
@@ -335,6 +368,8 @@ header {
     cursor: pointer;
 }
 
+.one-stud-bag-text-box button:hover,
+.archive-collection-left button:hover
 .new-product-left button:hover,
 .new-product-right button:hover,
 .text-area button:hover,
@@ -450,6 +485,7 @@ header {
     background: #333;
     color: #fff;
     font-size: 12px;
+    cursor: pointer;
 }
 
 .sneakers {
@@ -625,6 +661,7 @@ header {
     margin-top: 20px;
     border: 1px solid #000;
     background: none;
+    cursor: pointer;
 }
 
 .archive-collection {
@@ -662,6 +699,7 @@ header {
     height: 43px;
     border: 1px solid #000;
     background: #fff;
+    cursor: pointer;
 }
 
 .archive-collection-right {
@@ -958,6 +996,8 @@ footer {
 .store-location {
     width: 100%;
     display: flex;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
 }
 
 .store-location-box {
@@ -965,12 +1005,15 @@ footer {
     display: flex;
     padding: 25px 190px 25px 20px;
     justify-content: flex-end;
+    font-size: 14px;
+    font-weight: 600;
 }
 
 .store-location-img {
     background: url(../image/storelocator-black.svg);
     width: 18px;
     height: 18px;
+    margin-right: 7px;
 }
 
 .kr {
@@ -978,8 +1021,65 @@ footer {
     display: flex;
     padding: 25px 20px 25px 190px;
     justify-content: flex-start;
+    font-size: 14px;
+    font-weight: 600;
 }
 
-.earth {
-    background: url(../image/earth-black.svg);
+.kr-earth {
+    background: url(../image/earth-primary.svg);
+    width: 18px;
+    height: 18px;
+    margin-right: 7px;
+}
+
+.ios-android {
+    width: 100%;
+    display: flex;
+    width: 1166px;
+    height: 21px;
+    padding: 25px 368px;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    border-bottom: 1px solid #ddd;
+    font-weight: 600;
+}
+
+.ios-android a {
+    display: flex;
+}
+
+.ios-android a figure {
+    width: 21px;
+    height: 21px;
+    background-size: 21px 21px;
+    padding: 0 5px;
+    margin: 0 5px;
+    background-position: center;
+}
+
+.ios {
+    background: url(../image/footer-ios.svg)no-repeat;
+}
+
+.android {
+    background: url(../image/footer-android.svg)no-repeat;
+}
+
+.museum {
+    width: 1166px;
+    height: 16px;
+    padding: 25px 368px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 14px;
+    border-bottom: 1px solid #ddd;
+}
+
+.last-text {
+    width: 1166px;
+    height: 14px;
+    font-size: 12px;
+    text-align: center;
+    padding: 25px 368px;
 }
