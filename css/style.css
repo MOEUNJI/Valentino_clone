@@ -764,6 +764,7 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 
 .boutique-content:hover,
@@ -780,11 +781,176 @@ header {
 }
 
 .newsletter-container {
-    /* width: 100%; */
-    display: flex;
+    width: 100%;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    margin-top: 50px;
 }
 
 .newsletter-content {
-    width: 1903px;
-    height: 207px;
+    width: 1217px;
+    height: 83px;
+    padding: 35px 119px;
+    display: flex;
+    border: 1px solid #ddd;
+    margin: 35px auto;
+}
+
+.newsletter-left {
+    width: 538px;
+    height: 83px;
+    padding-right: 70px;
+    border-right: 1px solid #ddd;
+}
+
+.newsletter-left h2 {
+    font-size: 29px;
+    margin-bottom: 15px;
+    font-weight: 900;
+}
+
+.newsletter-left p {
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.newsletter-right {
+    width: 538px;
+    height: 83px;
+    padding-left: 119px;
+}
+
+.newsletter-right h2 {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.set {
+    display: flex;
+}
+
+.set input {
+    width: 280px;
+    height: 35px;
+    border: 1px solid #000;
+    padding-left: 15px;
+}
+
+.set button {
+    padding: 9.5px;
+    border: 1px solid #000;
+    background: #000;
+    color: #fff;
+    margin-left: -6px;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+footer {
+    width: 100%;
+}
+
+.footer-list {
+    width: 1166px;
+    height: 403px;
+    display: flex;
+    margin: 0 auto
+}
+
+.footer-list1,
+.footer-list2,
+.footer-list3 {
+    width: 314px;
+    height: 363px;
+}
+
+.footer-list4 {
+    width: 221px;
+}
+
+.footer-list ul li {
+    margin: 20px 0;
+    font-size: 14px;
+}
+
+.footer-list-li {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.footer-icon-ul {
+    display: flex;
+    flex-wrap: wrap;
+    height: 15px;
+}
+
+.footer-icon-ul li {
+    padding: 0 10px;
+}
+
+.footer-icon-ul li a figure {
+    background-size: 16px 16px;
+    width: 16px;
+    height: 16px;
+    background-repeat: no-repeat;
+    /* padding: 5px 10px; */
+    background-position: center;
+    margin: 0;
+}
+
+.instar {
+    background: url(../image/social_instagram-primary.svg);
+}
+
+.face {
+    background: url(../image/social_facebook-primary.svg);
+}
+
+.twitter {
+    background: url(../image/social_twitter-primary.svg);
+}
+
+.youtube {
+    background: url(../image/social_youtube-primary.svg);
+}
+
+.spotify {
+    background: url(../image/social_spotify-primary.svg);
+}
+
+.snapchat {
+    background: url(../image/social_snapchat-primary.svg);
+}
+
+.pinterest {
+    background: url(../image/social_pinterest-primary.svg);
+}
+
+.wechat {
+    background: url(../image/social_wechat-primary.svg);
+}
+
+.weibo {
+    background: url(../image/social_weibo-primary.svg);
+}
+
+.line {
+    background: url(../image/social_line-primary.svg);
+}
+
+.kakao {
+    background: url(../image/social_kakao-primary.svg);
+}
+
+.xiaohogshu {
+    background: url(../image/social_xiaohogshu-primary.svg);
+}
+
+.hand {
+    background: url(../image/social_hand-primary.svg);
+}
+
+.tiktok {
+    background: url(../image/social_tiktok-primary.svg);
 }
