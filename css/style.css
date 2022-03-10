@@ -954,3 +954,32 @@ footer {
 .tiktok {
     background: url(../image/social_tiktok-primary.svg);
 }
+
+.store-location {
+    width: 100%;
+    display: flex;
+}
+
+.store-location-box {
+    width: 741px;
+    display: flex;
+    padding: 25px 190px 25px 20px;
+    justify-content: flex-end;
+}
+
+.store-location-img {
+    background: url(../image/storelocator-black.svg);
+    width: 18px;
+    height: 18px;
+}
+
+.kr {
+    width: 741px;
+    display: flex;
+    padding: 25px 20px 25px 190px;
+    justify-content: flex-start;
+}
+
+.earth {
+    background: url(../image/earth-black.svg);
+}
