@@ -11,6 +11,7 @@
     justify-content: space-between;
     position: fixed;
     width: 100%;
+    z-index: 999;
 }
 
 .ham {
@@ -28,6 +29,7 @@ header {
     background: linear-gradient(180deg,rgba(0,0,0,0.9),rgba(0,0,0,0));
     position: fixed;
     width: 100%;
+    z-index: 9999;
 }
 
 .header-container {
@@ -91,13 +93,13 @@ header {
 
 .header-left ul li a {
     display: flex;
-    margin-right: 10px;
     padding:10px;
 
 }
 
 .header-left ul li a span {
     color: #fff;
+    font-size: 14px;
 } 
 
 .header-center {
@@ -201,6 +203,7 @@ header {
     color: #fff;
     font-weight: 600;
     margin-bottom: 5px;
+    font-size: 14px;
 }
 
 .main-slider-content {
@@ -367,7 +370,7 @@ header {
 }
 
 .pink-pp-collection {
-    width: 1073px;
+    max-width: 1073px;
     margin: 0 auto;
 }
 
@@ -376,7 +379,7 @@ header {
     background-size: cover;
     background-position: center;
     margin: 0 auto;
-    width: 91%;
+    max-width: 91%;
     height: 600px;
 }
 
@@ -442,6 +445,7 @@ header {
     width: 1238px;
     margin: 0 auto;
     display: flex;
+    position: relative;
 }
 
 .one-stud-bag ul {
@@ -483,6 +487,18 @@ header {
     background-size: 282px 353px;
     width: 282px;
     height: 353px;
+}
+
+.arr-right-black {
+    background: url(../image/arrow_right-small.svg);
+    background-size: 14px 20px;
+    width: 14px;
+    height: 20px;
+    z-index: 999;
+    position: absolute;
+    top: 50%;
+    right: -50px;
+    transform: translateY(-50%);
 }
 
 .one-stud-bag-text-box {
@@ -665,7 +681,7 @@ header {
 .new-product-container {
     display: flex;
     width: 100%;
-    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .new-product-container figure{
@@ -678,9 +694,6 @@ header {
     background: url(../image/new-arrivals-red.jpg);
 }
 
-.new-product-right-img {
-    background: url(../image/green-man.jpg);
-}
 
 .new-product h2 { 
     width: 1073px;
@@ -737,6 +750,7 @@ header {
 .archive-collection-left p {
     font-family: Georgia, 'Times New Roman', Times, serif;
     margin-bottom: 20px;
+    font-style: italic;
 }
 
 .archive-collection-left button {
@@ -871,7 +885,7 @@ header {
 }
 
 .newsletter-content {
-    width: 1217px;
+    width: 1600px;
     height: 83px;
     padding: 35px 119px;
     display: flex;
@@ -880,9 +894,9 @@ header {
 }
 
 .newsletter-left {
-    width: 538px;
+    width: 50%;
     height: 83px;
-    padding-right: 70px;
+    padding-right: 119px;
     border-right: 1px solid #ddd;
 }
 
@@ -898,7 +912,7 @@ header {
 }
 
 .newsletter-right {
-    width: 538px;
+    width: 50%;
     height: 83px;
     padding-left: 119px;
 }
@@ -1122,9 +1136,10 @@ footer {
 .last-text {
     width: 100%;
     height: 14px;
-    font-size: 12px;
+    font-size: 11px;
     text-align: center;
     padding: 25px 0;
+    
 }
 
 @media screen and (max-width:1350px){
@@ -1400,13 +1415,26 @@ footer {
         margin-bottom: 14px;
     }
 
+    .new-product {
+        margin: 0 auto;
+        padding: 0;
+    }
+
     .new-product-left {
         width: 100%;
     }
 
     .new-product-container figure{
-        background-size: 803px 1016px;
         width: 803px;
         height: 1016px;
+        background-size: cover;
     }
+
+    .new-product-left-img {
+        background: url(../image/new-arrivals-red.jpg)no-repeat;
+    }
+    .new-product-left-img {
+        background: url(../image/new-arrivals-red.jpg)no-repeat;
+    }
+        
 }
