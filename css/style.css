@@ -1164,7 +1164,7 @@ footer {
     .highlight {
         width: 1073px;
         margin: 0 auto;
-        padding: 0;
+        padding: 130px 0 0 0 ;
     }
 
     .arr-prev-img-white,
@@ -1276,7 +1276,6 @@ footer {
     .highlight {
         width: 1005px;
         margin: 0 auto;
-        padding: 0;
         height: 752px;
     }
 
